@@ -1,5 +1,6 @@
-## <Collapsable /> component
+### Collapsable component
 
 
-#Run:
+##Run:
+
 `npm i; npm run start`

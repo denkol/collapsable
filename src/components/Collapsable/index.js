@@ -104,19 +104,12 @@ class Collapsable extends Component {
       }),
       expandIcon: classNames({
         "expand-icon": true,
-        "expand-icon--is-active": isExpanded
+        "expand-icon--is-active": isExpanded,
+        "expand-icon--is-init-hidden": !expandIcon
       })
     };
 
     const DynamicRender = {
-      expandIcon: () => {
-        if(expandIcon === false)
-          return null;
-        
-        return (
-          <div style={{backgroundImage: `url(${closeIcon})`}} className={DynamicClasses.expandIcon}></div>
-        );
-      },
       drawer: () => {
         if(content === false) 
           return null;
@@ -137,7 +130,7 @@ class Collapsable extends Component {
           <ExpansionPanel classes={{...this.props.classes}} onChange={() => this.toggleDrawer()} disabled={!content}>
             <ExpansionPanelSummary className="collapsable-head" style={{fontSize: titleSize, padding: 0}}>
               <h2 className={DynamicClasses.headline}>{title}</h2>
-              {DynamicRender.expandIcon()}
+              <div style={{backgroundImage: `url(${closeIcon})`}} className={DynamicClasses.expandIcon}></div>
             </ExpansionPanelSummary>
             {DynamicRender.drawer()}
           </ExpansionPanel>

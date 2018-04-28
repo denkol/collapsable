@@ -24,11 +24,6 @@
 
 .collapsable .collapsable .expand-icon {
   margin-right: 8px;
-  opacity: 0;
-}
-
-.collapsable .collapsable .expand-icon--is-active {
-  opacity: 1;
 }
 
 .collapsable .collapsable .collapsable-drawer {
@@ -46,14 +41,8 @@
 /* Content */
 
 .collapsable-content {
-  /*width: 70%;*/
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 1200px) {
-  .collapsable-content {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 /* Head */
@@ -64,6 +53,7 @@
   justify-content: space-between;
   height: 100%;
 }
+
 .collapsable-head div:first-child {
   width: 100%;
   padding: 0 !important;
@@ -135,7 +125,12 @@
   opacity: 0.5;
 }
 
+.expand-icon--is-init-hidden {
+  opacity: 0;
+}
+
 .expand-icon--is-active {
   opacity: 1;
   transform: scale(1.1) rotate(45deg);
 }
+

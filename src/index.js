@@ -1,15 +1,3 @@
-/*
-
-  My notes:
-
-  1. expandIcon is not square in cross mode. This is particularly noticeable when resizing the window. Looks a little weird. - SOLVED, needs your check
-  2. Show expandIcon when extended - even if expandIcon is disabled (see Apple example) - SOLVED
-  3. margin from parent under last child (see attached pictures) - SOLVED
-  4. Could you add that the hover effect only comes when the expandIcon is disabled? - SOLVED
-
-*/
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

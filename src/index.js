@@ -18,7 +18,7 @@ const items = [
         expandIcon: true,
         border: true,
         content: (
-          <div>
+          <div >
             <p>The iPhone Upgrade Program is the easiest way to get a new iPhone every year, as well as the security and protection of AppleCare+. You can purchase iPhone 8, iPhone 8 Plus, or iPhone X with the iPhone Upgrade Program on apple.com, using the Apple Store app, or at an Apple Store.</p>
             <a href="/">Learn more about the iPhone Upgrade Program</a>
           </div>

@@ -18,7 +18,7 @@ const items = [
         expandIcon: true,
         border: true,
         content: (
-          <div >
+          <div>
             <p>The iPhone Upgrade Program is the easiest way to get a new iPhone every year, as well as the security and protection of AppleCare+. You can purchase iPhone 8, iPhone 8 Plus, or iPhone X with the iPhone Upgrade Program on apple.com, using the Apple Store app, or at an Apple Store.</p>
             <a href="/">Learn more about the iPhone Upgrade Program</a>
           </div>
@@ -77,7 +77,7 @@ const App = () => {
         You can add any styles to parent component
         <Collapsable /> always will be fluid width.
       */}
-      <div style={{width:'50%', padding: '0 20px', backgroundColor: "lightblue"}}>
+      <div style={{width:'50%', backgroundColor: "lightblue"}}>
         {RenderList(items)}
       </div>
       <div style={{width:'50%', backgroundColor: 'pink', height: '20px'}} />

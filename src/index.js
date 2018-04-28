@@ -38,8 +38,7 @@ const items = [
         )
       },
     ],
-  },
-  {
+  }, {
     id: 1,
     title: "Frequently Asked Questions #2",
     titleSize: "32px",
@@ -78,7 +77,7 @@ const App = () => {
         You can add any styles to parent component
         <Collapsable /> always will be fluid width.
       */}
-      <div style={{width:'50%', padding: '0 20px'}}>
+      <div style={{width:'50%', padding: '0 20px', backgroundColor: "lightblue"}}>
         {RenderList(items)}
       </div>
       <div style={{width:'50%', backgroundColor: 'pink', height: '20px'}} />

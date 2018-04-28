@@ -1,34 +1,3 @@
-/*
-  Hey, Denis. Looks pretty good. Some minor points:
-
-  I want to be able to do something like this:
-  <div style={{{{display:'flex'}}>
-  <div style={{{: Width:'50%'}}>
-  RenderList(items)}
-  </div>
-  <div style={{{: Width:'50%'}}}/>
-  </div>
-
-
-  I really like the autoscaling, but in this case, it is not very helpful. Any ideas? (see attached pictures)
-
-
-  expandIcon is not square in cross mode. This is particularly noticeable when resizing the window. Looks a little weird.
-
-
-  show expandIcon when extended - even if expandIcon is disabled (see Apple example)
-
-
-  margin from parent under last child (see attached pictures)
-
-
-  could you add that the hover effect only comes when the expandIcon is disabled?
-
-
-  Any other ideas on the component?
-
-
-*/
 /* 
   
   Component API should look like:
@@ -55,8 +24,8 @@ https://www.apple.com/shop/buy-iphone/iphone-8
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import closeIcon from './close-button.svg';
-import './Collapsable.css';
+import closeIcon from './assets/close-button.svg';
+import './styles/Collapsable.css';
 
 import { withStyles } from 'material-ui/styles';
 import ExpansionPanel, {
@@ -106,7 +75,7 @@ class Collapsable extends Component {
         "expand-icon": true,
         "expand-icon--is-active": isExpanded,
         "expand-icon--is-init-hidden": !expandIcon
-      })
+      }),
     };
 
     const DynamicRender = {
@@ -128,7 +97,7 @@ class Collapsable extends Component {
       <div className={DynamicClasses.collapsable}>
         <div className="collapsable-content">
           <ExpansionPanel classes={{...this.props.classes}} onChange={() => this.toggleDrawer()} disabled={!content}>
-            <ExpansionPanelSummary className="collapsable-head" style={{fontSize: titleSize, padding: 0}}>
+            <ExpansionPanelSummary className="collapsable-head" style={{fontSize: titleSize}}>
               <h2 className={DynamicClasses.headline}>{title}</h2>
               <div style={{backgroundImage: `url(${closeIcon})`}} className={DynamicClasses.expandIcon}></div>
             </ExpansionPanelSummary>
@@ -143,7 +112,7 @@ class Collapsable extends Component {
 
 Collapsable.defaultProps = {
   title: 'Untitled',
-  titleSize: '16px',
+  titleSize: 'inherit',
   content: false,
   expandIcon: false,
   border: false,

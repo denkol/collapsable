@@ -20,6 +20,7 @@
 .collapsable .collapsable .collapsable-head {
   padding-bottom: 0;
 
+
 }
 
 .collapsable .collapsable .expand-icon {
@@ -27,7 +28,7 @@
 }
 
 .collapsable .collapsable .collapsable-drawer {
-  /*margin-bottom: 22px;*/
+  /*padding: 0 24px;*/
 }
 
 .collapsable_fullwidth-border {
@@ -72,6 +73,7 @@
   transition: height 0.2s;
   /*height: 0;*/
   margin-bottom: 22px;
+  padding: 0 24px;
 }
 
 .collapsable-drawer--is-expanded {

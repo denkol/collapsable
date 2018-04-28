@@ -16,7 +16,7 @@
 - Auto-Scale expandIcon to textSize
 - No library or only MaterialUI@Next (https://material-ui-next.com) for layout and responsive behaviour. 
 
-https://www.apple.com/shop/buy-iphone/iphone-8
+  https://www.apple.com/shop/buy-iphone/iphone-8
 
 */
 
@@ -94,10 +94,10 @@ class Collapsable extends Component {
     };
 
     return (
-      <div className={DynamicClasses.collapsable}>
+      <div className={DynamicClasses.collapsable} style={{fontSize: titleSize}}>
         <div className="collapsable-content">
           <ExpansionPanel classes={{...this.props.classes}} onChange={() => this.toggleDrawer()} disabled={!content}>
-            <ExpansionPanelSummary className="collapsable-head" style={{fontSize: titleSize}}>
+            <ExpansionPanelSummary className="collapsable-head">
               <h2 className={DynamicClasses.headline}>{title}</h2>
               <div style={{backgroundImage: `url(${closeIcon})`}} className={DynamicClasses.expandIcon}></div>
             </ExpansionPanelSummary>

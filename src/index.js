@@ -14,7 +14,7 @@ const items = [
       {
         id: 2,
         title: "What is the iPhone Upgrade Program?",
-        titleSize: "14px",
+        titleSize: "20px",
         expandIcon: true,
         border: true,
         content: (

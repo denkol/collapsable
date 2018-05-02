@@ -56,7 +56,7 @@ class Footer extends Component {
             <div className="footer-menu">
               {menuItems.map((item, key) => {
                 return (
-                  <div className="footer-menu__item">
+                  <div key={key} className="footer-menu__item">
                     <a href={item.href}>{item.title}</a>
                   </div>
                 );

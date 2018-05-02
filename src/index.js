@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import AppBar from './components/AppBar';
-import Collapsable from './components/Collapsable';
 import Footer from './components/Footer';
 
 /* 

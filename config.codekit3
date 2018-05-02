@@ -63,26 +63,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/src\/components\/AppBar\/assets\/bag.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/AppBar\/assets\/bag.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/AppBar\/assets\/search.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/AppBar\/assets\/search.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/src\/components\/AppBar\/icons.js": {
 		"ft": 64,
 		"ma": 0,
@@ -194,26 +174,6 @@
 		"oAP": "\/src\/components\/Collapsable\/styles\/Collapsable-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"\/src\/components\/Footer\/assets\/bag.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/Footer\/assets\/bag.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/Footer\/assets\/search.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/Footer\/assets\/search.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/src\/components\/Footer\/index.js": {
 		"ft": 64,

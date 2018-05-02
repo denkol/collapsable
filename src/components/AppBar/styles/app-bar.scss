@@ -19,6 +19,14 @@
   user-select: none;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  
+  &--is-expanded {
+    background-color: #000;
+    .app-bar-menu {
+      display: block;
+    }
+  }
+  
   &--theme-light {
     background-color: #fff;
     border-bottom: 1px solid #eee;
@@ -35,8 +43,8 @@
     .app-hamburger-crust {
       background-color: #000;
     }
-    
   }
+
 }
 
 

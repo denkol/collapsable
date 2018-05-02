@@ -53,6 +53,7 @@ class AppBar extends Component {
       AppBar: classNames({
         "app-bar": true,
         "app-bar--theme-light": theme === "light",
+        "app-bar--is-expanded": isFullScreenMenuOpen,
       }),
       Hamburger: classNames({
         "app-hamburger": true,
@@ -60,7 +61,6 @@ class AppBar extends Component {
       }),
       Menu: classNames({
         "app-bar-menu": true,
-        "app-bar-menu--is-expanded": isFullScreenMenuOpen,
       })
     };
 

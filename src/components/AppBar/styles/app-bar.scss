@@ -1,0 +1,45 @@
+@import 'app-bar-menu';
+@import 'app-bar-content';
+@import 'app-bar-hamburger';
+
+.app-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 48px;
+  background-color: #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  &--theme-light {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    .app-bar-content__item {
+      svg {
+        fill: #000;
+      }
+    }
+    .app-bar-menu__item {
+      a {
+        color: #000;
+      }
+    }
+    .app-hamburger-crust {
+      background-color: #000;
+    }
+    .app-bar-menu {
+      background-color: #fff;
+      &__item {
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+}

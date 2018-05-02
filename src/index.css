@@ -1,4 +1,5 @@
 * {box-sizing: border-box;}
+
 html, body {
   color: #333;
   width: 100%;
@@ -19,3 +20,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;  
+  }
+}
+

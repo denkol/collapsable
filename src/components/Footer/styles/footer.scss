@@ -1,0 +1,15 @@
+@import 'footer-content';
+@import 'footer-menu';
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  &--theme-light {
+
+    background-color: #eee;
+    color: #000;
+  }
+}

@@ -1,0 +1,40 @@
+.footer-menu {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 28px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+      cursor:pointer;
+      &:hover {
+        opacity: .65;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .footer-menu {
+    flex-direction: column;
+    &__item {
+      margin-right: 0;
+    }
+
+  }
+}

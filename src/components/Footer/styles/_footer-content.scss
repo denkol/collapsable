@@ -1,0 +1,21 @@
+.footer-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-content {
+    text-align: center;
+    flex-direction: column;
+    // align-
+    &__item {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

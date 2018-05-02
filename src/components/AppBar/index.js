@@ -64,9 +64,9 @@ class AppBar extends Component {
       })
     };
 
-    const DynamicRender = {
+    // const DynamicRender = {
       
-    };
+    // };
 
     return (
       <header className={DynamicClasses.AppBar}>

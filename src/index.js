@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import AppBar from './components/AppBar';
 import Collapsable from './components/Collapsable';
+import Footer from './components/Footer';
+
+/* 
+  Try to change theme prop to "light".
+  Also "dark" theme is default theme.
+*/
 
 const App = () => {
   return (
     <div>
       <AppBar
-        theme="light"
+        theme="dark"
         menuItems={
           [
             {
@@ -28,7 +35,24 @@ const App = () => {
         }
       />
       <div style={{paddingTop: "48px"}}>
-        {/*Content here*/}
+        {/*Some content here*/}
+        <Footer
+          theme="dark"
+          menuItems={
+            [
+              {
+                href: "/datenschutz",
+                title: "Datenschutz"
+              }, {
+                href: "/nutzungsbestimmungen",
+                title: "Nutzungsbestimmungen"
+              }, {
+                href: "/impressum",
+                title: "Impressum"
+              }
+            ]
+          }
+        />
       </div>
     </div>
   );

@@ -35,6 +35,13 @@
     .app-hamburger-crust {
       background-color: #000;
     }
+    
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .app-bar--theme-light {
     .app-bar-menu {
       background-color: #fff;
       &__item {

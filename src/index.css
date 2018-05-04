@@ -10,6 +10,10 @@ html, body {
   font-weight: 400;
   margin: 0;
   font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -24,6 +28,8 @@ a:hover {
 .container {
   width: 1024px;
   margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -31,6 +37,7 @@ a:hover {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+
   }
 }
 

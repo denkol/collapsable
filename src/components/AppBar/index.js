@@ -46,12 +46,13 @@ class AppBar extends Component {
     })
   }
   render() {
-    const { menuItems, theme } = this.props;
+    const { menuItems, theme, transparent } = this.props;
     const { isFullScreenMenuOpen } = this.state;
 
     const DynamicClasses = {
       AppBar: classNames({
         "app-bar": true,
+        "app-bar_transparent": transparent,
         "app-bar--theme-light": theme === "light",
         "app-bar--is-expanded": isFullScreenMenuOpen,
       }),
@@ -68,36 +69,43 @@ class AppBar extends Component {
       
     // };
 
+
+
     return (
-      <header className={DynamicClasses.AppBar}>
-        <div className="app-bar-content container">
-          <div className="app-bar-content__item app-bar-content__item_hamburger" onClick={() => this.toggleMobileMenu()} >
-            <IconHamburger className={DynamicClasses.Hamburger} />
+      <nav className={DynamicClasses.AppBar}>
+        <div className="app-bar-header">
+          <div className="app-bar-header__item app-bar-header__item_hamburger">
+            <IconHamburger className={DynamicClasses.Hamburger} onClick={() => this.toggleMobileMenu()}/>
           </div>
+          <div className="app-bar-header__item app-bar-header__item_logo">
+            <a href="/" title="Go Home">{IconLogo}</a>
+          </div>
+          <div className="app-bar-header__item app-bar-header__item_bag">
+            {IconBag}
+          </div>
+        </div>
+        <div className="app-bar-content container">
           <div className="app-bar-content__item app-bar-content__item_logo">
             <a href="/" title="Go Home">{IconLogo}</a>
           </div>
-          <div className="app-bar-content__item app-bar-content__item_menu">
-            <div className={DynamicClasses.Menu}>
-              {menuItems.map((item, key) => {
-                return (
-                  <div key={key} className="app-bar-menu__item">
-                    <a href={item.href}> {item.title} </a>
-                  </div>    
-                );
-              })}
-            </div>
-          </div>
+          {menuItems.map((item, key) => {
+            return (
+              <div key={key} className="app-bar-content__item app-bar-content__item_menu">
+                <a href={item.href}> {item.title} </a>
+              </div>    
+            );
+          })}
           <div className="app-bar-content__item app-bar-content__item_search">
             {/* Here will be <SearchBar /> component */}
             {IconSearch}
+            <input type="text" placeholder="Suche"/>
           </div>
           <div className="app-bar-content__item app-bar-content__item_bag">
             {/* Here will be <Bag /> component */}
             {IconBag}
           </div>
         </div>
-      </header>
+      </nav>
     );
   }
 };
@@ -106,11 +114,13 @@ class AppBar extends Component {
 AppBar.defaultProps = {
   menuItems: [],
   theme: 'dark',
+  transparent: false
 };
 
 AppBar.propTypes = {
   menuItems: PropTypes.array,
   theme: PropTypes.string,
+  transparent: PropTypes.bool,
 };
 
 export default AppBar;

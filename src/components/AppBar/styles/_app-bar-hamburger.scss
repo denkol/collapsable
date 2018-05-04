@@ -3,8 +3,8 @@
     position: absolute;
     z-index: 3;
     top: 0;
-    width: 48px;
-    height: 48px;
+    width: $app-bar-height;
+    height: $app-bar-height;
     cursor: pointer;
     -webkit-transition: opacity .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.4,.01,.165,.99);
     transition: opacity .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .4s cubic-bezier(.4,.01,.165,.99);
@@ -17,8 +17,8 @@
         z-index: 3;
         top: 0;
         left: 0;
-        width: 48px;
-        height: 48px;
+        width: $app-bar-height;
+        height: $app-bar-height;
         transition: opacity .2s cubic-bezier(.645,.045,.355,1);
         &_top {
             -webkit-transition: -webkit-transform .25s cubic-bezier(.4,.01,.165,.99);

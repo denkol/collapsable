@@ -43,7 +43,7 @@ export const IconBag = (
 
 export const IconHamburger = (props) => {
   return (
-    <label className={props.className} htmlFor="ac-gn-menustate" aria-hidden="true">
+    <label onClick={props.onClick} className={props.className} htmlFor="ac-gn-menustate" aria-hidden="true">
       <span className="app-hamburger__bread app-hamburger__bread_top">
         <span className="app-hamburger-crust app-hamburger-crust_top" />
       </span>

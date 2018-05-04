@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <AppBar
-        transparent={true}
+        
         theme="dark"
         menuItems={
           [

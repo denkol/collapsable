@@ -3,15 +3,10 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  // padding: 0 22px;
-  -webkit-transition: visibility 0s linear 1s;
-  transition: visibility 0s linear 1s;
   &__item {
     .app-bar-content-link {
       display: block;
       color: #fff;
-      font-size: 14px;
-      font-weight: 200;
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
@@ -84,6 +79,8 @@
     height: auto;
     padding: 32px 48px;
     visibility: hidden;
+    // -webkit-transition: visibility 0s linear 1s;
+  // transition: visibility 0s linear 1s;
     &__item {
       opacity: 0;
       -webkit-transform: scale(1.1) translateY(-24px);

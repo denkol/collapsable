@@ -14,7 +14,6 @@ const App = () => {
   return (
     <div>
       <AppBar
-        
         theme="dark"
         menuItems={
           [

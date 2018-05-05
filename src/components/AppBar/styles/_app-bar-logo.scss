@@ -1,0 +1,14 @@
+.app-bar-logo {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 24px;
+  color: #fff;
+  &:link, &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}

@@ -30,7 +30,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { IconLogo, IconSearch, IconBag, IconHamburger } from './icons';
+import { IconSearch, IconBag, IconHamburger } from './icons';
 import './styles/app-bar.css';
 
 class AppBar extends Component {
@@ -46,6 +46,7 @@ class AppBar extends Component {
     })
   }
   render() {
+    const AppName = "PANDA";
     const { menuItems, theme, transparent } = this.props;
     const { isFullScreenMenuOpen } = this.state;
 
@@ -78,7 +79,7 @@ class AppBar extends Component {
             <IconHamburger className={DynamicClasses.Hamburger} onClick={() => this.toggleMobileMenu()}/>
           </div>
           <div className="app-bar-header__item app-bar-header__item_logo">
-            <a href="/" title="Go Home">{IconLogo}</a>
+            <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>
           </div>
           <div className="app-bar-header__item app-bar-header__item_bag">
             {IconBag}
@@ -86,12 +87,12 @@ class AppBar extends Component {
         </div>
         <div className="app-bar-content container">
           <div className="app-bar-content__item app-bar-content__item_logo">
-            <a href="/" title="Go Home">{IconLogo}</a>
+            <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>
           </div>
           {menuItems.map((item, key) => {
             return (
               <div key={key} className="app-bar-content__item app-bar-content__item_menu">
-                <a href={item.href}> {item.title} </a>
+                <a className="app-bar-content-link" href={item.href}> {item.title} </a>
               </div>    
             );
           })}

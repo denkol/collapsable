@@ -7,7 +7,7 @@
   -webkit-transition: visibility 0s linear 1s;
   transition: visibility 0s linear 1s;
   &__item {
-    a {
+    .app-bar-content-link {
       display: block;
       color: #fff;
       font-size: 14px;
@@ -18,7 +18,7 @@
       text-overflow: eclipse;
       text-decoration: none;
       transition: opacity .2s cubic-bezier(.645,.045,.355,1);
-      cursor:pointer;
+      cursor: pointer;
       &:hover {
         opacity: .65;
       }
@@ -38,24 +38,6 @@
       a, svg {
         height: 100%;
         display: block;
-      }
-    }
-    &_menu {
-      a {
-        display: block;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 100%;
-        text-overflow: eclipse;
-        text-decoration: none;
-        transition: opacity .2s cubic-bezier(.645,.045,.355,1);
-        cursor:pointer;
-        &:hover {
-          opacity: .65;
-        }
       }
     }
     &_search {

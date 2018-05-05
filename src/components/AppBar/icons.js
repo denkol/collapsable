@@ -1,17 +1,5 @@
 import React from 'react';
 
-export const IconLogo = (
-  <svg width="72px" height="18px" viewBox="0 0 72 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-    <g id="Symbols" stroke="none" strokeWidth={1} fillRule="evenodd" fontFamily="HelveticaNeue-Thin, Helvetica Neue" fontSize={24} fontWeight={300}>
-      <g id="PANDA" transform="translate(-1.000000, -5.000000)">
-        <text>
-          <tspan x={0} y={23}>PANDA</tspan>
-        </text>
-      </g>
-    </g>
-  </svg>
-);
-
 export const IconSearch = (
   <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <g id="Symbols" stroke="none" strokeWidth={1} fillRule="evenodd">

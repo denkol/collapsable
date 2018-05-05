@@ -4,6 +4,7 @@ $app-bar-height: 48px;
 @import 'app-bar-content';
 @import 'app-bar-hamburger';
 @import 'app-bar-header';
+@import 'app-bar-logo';
 
 .app-bar {
   position: absolute;
@@ -17,7 +18,6 @@ $app-bar-height: 48px;
   width: 100%;
   height: $app-bar-height;
   background-color: #393939;
-  user-select: none;
   &_transparent {
     background-color: rgba(0,0,0,0.8);
   }
@@ -44,6 +44,9 @@ $app-bar-height: 48px;
   
   &--theme-light {
     background-color: #fff;
+    .logo {
+      color: #000;
+    }
     .app-bar_transparent {
       background-color: rgba(255,255,255,0.8);
     }

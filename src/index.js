@@ -8,10 +8,6 @@ import AppBar from './components/AppBar';
 import Footer from './components/Footer';
 import SubBar from './components/SubBar';
 
-/* 
-  Try to change theme prop to "light".
-  Also "dark" theme is default theme.
-*/
 
 const App = () => {
   return (

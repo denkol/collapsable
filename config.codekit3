@@ -113,46 +113,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/src\/components\/SubBar\/arrow.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/arrow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/dashboard.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/dashboard.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/Drift.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/Drift.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/src\/components\/SubBar\/icons.js": {
 		"ft": 64,
 		"ma": 0,
@@ -172,46 +132,6 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
-		},
-	"\/src\/components\/SubBar\/map.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/map.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/pi.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/pi.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/SmoothIcon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/SmoothIcon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/src\/components\/SubBar\/tap.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/src\/components\/SubBar\/tap.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/src\/index.js": {
 		"ft": 64,

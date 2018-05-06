@@ -1,6 +1,6 @@
 .sub-bar-content {
   display: flex;
-  aling-items: center;
+  align-items: center;
   justify-content: center;
   overflow: auto;
   @include container();
@@ -9,11 +9,15 @@
   //   justify-content: space-between;
   //   width: 100%;
   // }
+  
   @include mq('phablet', max) {
     justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
     transition: transform 200ms;
+  }
+  &_center {
+    justify-content: center;
   }
   &__item {
     width: 60px;

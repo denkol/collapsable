@@ -33,4 +33,7 @@
   @include mq('phablet', max) {
     display: flex;
   }
+  &--is-hidden {
+    display: none;
+  }
 }

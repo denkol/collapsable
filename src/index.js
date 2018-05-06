@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';
+import SubBar from './components/SubBar';
 
 /* 
   Try to change theme prop to "light".
@@ -37,6 +38,39 @@ const App = () => {
       />
       <div style={{paddingTop: "48px"}}>
         {/*Some content here*/}
+        <SubBar
+          theme={"light"}
+          menuItems={[
+            {
+              iconName: "map",
+              title: "SES"
+            }, {
+              iconName: "pi",
+              title: "PiBoard"
+            }, {
+              iconName: "drift",
+              title: "Drift"
+            }, {
+              iconName: "dashboard",
+              title: "Timeswipe"
+            }, {
+              iconName: "tap",
+              title: "Zubehör"
+            }
+          ]}
+        />
+        <SubBar
+          theme={"dark"}
+          menuItems={[
+            {
+              iconName: "copy",
+              title: "Significance"
+            }, {
+              iconName: "smooth",
+              title: "Denoise"
+            }
+          ]}
+        />
         <Footer
           theme="dark"
           menuItems={

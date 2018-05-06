@@ -26,14 +26,8 @@
     svg {
       display: block;
       fill: #fff;
-      transition: opacity .2s cubic-bezier(.645,.045,.355,1);
-      cursor:pointer;
-      &:hover {
-        opacity: .65;
-      }
+      @include hover();
     }
-
-    
 
     &_search {
       svg {
@@ -65,6 +59,7 @@
     }
     &_logo {
       @include mq('tablet', max) {
+        // background-color: pink;
         display: none;
       }
     }

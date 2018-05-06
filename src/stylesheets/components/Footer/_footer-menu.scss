@@ -12,11 +12,7 @@
       overflow: hidden;
       text-decoration: none;
       color: inherit;
-      transition: opacity .2s cubic-bezier(.645,.045,.355,1);
-      cursor:pointer;
-      &:hover {
-        opacity: .65;
-      }
+      @include hover();
     }
   }
 }

@@ -83,13 +83,10 @@
 }
 
 @mixin hover() {
-  transition: opacity 200ms;
+  transition: opacity .2s cubic-bezier(.645, .045, .355, 1);
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
-  }
-  &:active {
-    opacity: 0.2;
+    opacity: .65;
   }
 }
 

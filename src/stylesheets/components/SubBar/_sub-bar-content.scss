@@ -1,0 +1,34 @@
+.sub-bar-content {
+  display: flex;
+  aling-items: center;
+  justify-content: center;
+  overflow: auto;
+  @include container();
+  @include scrollbar-hide;
+  // @include mq('tablet', max) {
+  //   justify-content: space-between;
+  //   width: 100%;
+  // }
+  @include mq('phablet', max) {
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    transition: transform 200ms;
+  }
+  &__item {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 52px;
+    @include right(75px);
+    @include hover();
+    @include mq('tablet', max) {
+      @include right(50px);
+    }
+    @include mq('phablet', max) {
+      flex: none;
+      @include right(40px);
+    }
+  }
+}

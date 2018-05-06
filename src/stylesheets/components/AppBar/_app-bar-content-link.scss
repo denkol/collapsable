@@ -6,13 +6,9 @@
     width: 100%;
     text-overflow: eclipse;
     text-decoration: none;
-    transition: opacity .2s cubic-bezier(.645, .045, .355, 1);
-    cursor: pointer;
+    @include hover();
     @include mq('tablet', max) {
         font-size: 17px;
         line-height: 44px;
-    }
-    &:hover {
-        opacity: .65;
     }
 }

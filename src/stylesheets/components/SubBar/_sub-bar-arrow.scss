@@ -1,0 +1,36 @@
+.sub-bar-arrow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  // border-left: 1px solid #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 35px;
+  // height: 55px;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 1px;
+    background-color: #979797;
+  }
+  &__icon {
+    @include hover();
+    width: 55px;
+    height: 55px;
+    svg {
+      display: block;
+      fill: #000000;
+      @include absoluteCenter();
+    }
+  }
+  @include mq('phablet', max) {
+    display: flex;
+  }
+}

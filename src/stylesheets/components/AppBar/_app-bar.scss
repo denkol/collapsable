@@ -13,13 +13,11 @@ $app-bar-height: 48px;
   width: 100%;
   height: $app-bar-height;
   background-color: #393939;
-  @include mq('tablet', max) {
-    transition: background 0.35s linear,height 0.35s ease-in 200ms;
-  }
   &_transparent {
     background-color: rgba(0,0,0,0.8);
   }
   @include mq('tablet', max) {
+    transition: background 0.35s linear,height 0.35s ease-in 200ms;
     &--is-expanded {
       background-color: #000;
       height: 100%;

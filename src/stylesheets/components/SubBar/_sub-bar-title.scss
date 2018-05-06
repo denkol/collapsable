@@ -1,0 +1,9 @@
+.sub-bar-title {
+  margin-top: 8px;
+  span {
+    @include cutWord();
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+  }
+}

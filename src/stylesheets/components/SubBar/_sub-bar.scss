@@ -34,4 +34,14 @@
       }
     }
   }
+  &--lesser-3 {
+    padding-right: 20px;
+    .sub-bar-content {
+      justify-content: center;
+    }
+    .sub-bar-arrow {
+      display: none;
+    }
+
+  }
 }

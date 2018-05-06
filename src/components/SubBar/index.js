@@ -52,22 +52,15 @@ class SubBar extends Component {
     const DynamicClasses = {
       SubBar: classNames({
         'sub-bar': true,
-        'sub-bar--theme-dark': theme === "dark"
-      }),
-      Content: classNames({
-        'sub-bar-content': true,
-        'sub-bar-content_center': menuItems.length <= 4
-      }),
-      Arrow: classNames({
-        'sub-bar-arrow': true,
-        'sub-bar-arrow--is-hidden': menuItems.length <= 4
+        'sub-bar--theme-dark': theme === "dark",
+        'sub-bar--lesser-3': menuItems.length <= 3
       })
     };
 
     
     return (
       <div className={DynamicClasses.SubBar}>
-        <div className={DynamicClasses.Content}>
+        <div className='sub-bar-content'>
           {menuItems.map((item, key) => {
             return (
               <div key={key} className='sub-bar-content__item'>
@@ -79,7 +72,7 @@ class SubBar extends Component {
             );
           })}
         </div>
-        <div className={DynamicClasses.Arrow}>
+        <div className='sub-bar-arrow'>
           <button className='sub-bar-arrow__icon'>
             {IconArrow}
           </button>

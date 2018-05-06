@@ -25,7 +25,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import closeIcon from './assets/close-button.svg';
-import './styles/Collapsable.css';
 
 import { withStyles } from 'material-ui/styles';
 import ExpansionPanel, {

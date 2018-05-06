@@ -1,6 +1,8 @@
+/* Styles bundle */
+import './stylesheets/main.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';

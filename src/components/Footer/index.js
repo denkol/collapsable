@@ -24,7 +24,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './styles/footer.css';
 
 class Footer extends Component {
   constructor(props) {
@@ -48,7 +47,7 @@ class Footer extends Component {
 
     return (
       <footer className={DynamicClasses.Footer}>
-        <div className="footer-content container">
+        <div className="footer-content">
           <div className="footer-content__item footer-content__item_copyright">
             <span>Copyright © 2018 Panda Technology GmbH. Alle Rechte vorbehalten.</span>
           </div>

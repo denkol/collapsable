@@ -1,0 +1,18 @@
+.app-bar-content-link {
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: eclipse;
+    text-decoration: none;
+    transition: opacity .2s cubic-bezier(.645, .045, .355, 1);
+    cursor: pointer;
+    @include mq('tablet', max) {
+        font-size: 17px;
+        line-height: 44px;
+    }
+    &:hover {
+        opacity: .65;
+    }
+}

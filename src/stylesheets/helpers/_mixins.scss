@@ -1,0 +1,101 @@
+@mixin container($width: $container-width) {
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+  @include mq('container', max) {
+    width: 100%;
+  }
+}
+
+@function rem($size) {
+  $remSize: $size / $default-font-size;
+  @return #{$remSize}rem;
+}
+
+@mixin scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-moz-scrollbar {
+    display: none;
+  }
+  &::-ms-scrollbar {
+    display: none;
+  }
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type==max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin right($width) {
+  margin-right: #{$width};
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin bottom($px) {
+  margin-bottom: #{$px};
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin cutWord($display:block) {
+  display: $display;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin hover() {
+  transition: opacity 200ms;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

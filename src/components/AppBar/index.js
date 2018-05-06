@@ -31,7 +31,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { IconSearch, IconBag, IconHamburger } from './icons';
-import './styles/app-bar.css';
 
 class AppBar extends Component {
   constructor(props) {
@@ -66,11 +65,6 @@ class AppBar extends Component {
       })
     };
 
-    // const DynamicRender = {
-      
-    // };
-
-
 
     return (
       <nav className={DynamicClasses.AppBar}>
@@ -85,7 +79,7 @@ class AppBar extends Component {
             {IconBag}
           </div>
         </div>
-        <div className="app-bar-content container">
+        <div className="app-bar-content">
           <div className="app-bar-content__item app-bar-content__item_logo">
             <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>
           </div>

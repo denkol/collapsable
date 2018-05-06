@@ -4,6 +4,9 @@
   display: none;
   justify-content: space-between;
   align-items: center;
+  @include mq('tablet', max) {
+    display: flex;
+  }
   &__item {
     svg {
       display: block;
@@ -27,12 +30,3 @@
     }
   }
 }
-
-
-@media only screen and (max-width: 767px) {
-  .app-bar-header {
-    display: flex;
-  }
-}
-
-

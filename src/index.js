@@ -46,6 +46,12 @@ const App = () => {
             }, {
               iconName: "drift",
               title: "Drift"
+            }, {
+              iconName: "dashboard",
+              title: "Timeswipe"
+            }, {
+              iconName: "tap",
+              title: "Zubehör"
             }
           ]}
         />

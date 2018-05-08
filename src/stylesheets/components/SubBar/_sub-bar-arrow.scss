@@ -2,18 +2,32 @@
   display: none;
   align-items: center;
   justify-content: center;
-  // border-left: 1px solid #333;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   background-color: #fff;
-  width: 35px;
-  // height: 55px;
+  width: 50px;
+  transition: opacity 200ms;
+  opacity: 1;
+  &_left {
+    left: 0;
+    .sub-bar-arrow__icon {
+      transform: rotate(180deg);
+    }
+    &:after {
+      right: 0;
+    }
+  }
+  &_right {
+    right: 0;
+    &:after {
+      left: 0;
+    }
+  }
   &:after {
     content: "";
     position: absolute;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
     height: 70%;
@@ -30,7 +44,12 @@
       @include absoluteCenter();
     }
   }
-  @include mq('phablet', max) {
+  @include mq('tablet', max) {
     display: flex;
+  }
+  &--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }

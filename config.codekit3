@@ -163,7 +163,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/base\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/base\/_base.scss": {
@@ -176,7 +176,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/base\/_base.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/base\/_reset.scss": {
@@ -189,7 +189,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/base\/_reset.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/_all.scss": {
@@ -202,7 +202,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_all.scss": {
@@ -215,7 +215,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar-content-link.scss": {
@@ -228,7 +228,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar-content-link.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar-content.scss": {
@@ -241,7 +241,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar-content.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar-hamburger.scss": {
@@ -254,7 +254,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar-hamburger.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar-header.scss": {
@@ -267,7 +267,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar-header.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar-logo.scss": {
@@ -280,7 +280,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar-logo.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/AppBar\/_app-bar.scss": {
@@ -293,7 +293,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/AppBar\/_app-bar.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Collapsable\/_all.scss": {
@@ -306,7 +306,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Collapsable\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Collapsable\/_collapsable.scss": {
@@ -319,7 +319,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Collapsable\/_collapsable.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Footer\/_all.scss": {
@@ -332,7 +332,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Footer\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Footer\/_footer-content.scss": {
@@ -345,7 +345,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Footer\/_footer-content.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Footer\/_footer-menu.scss": {
@@ -358,7 +358,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Footer\/_footer-menu.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/Footer\/_footer.scss": {
@@ -371,7 +371,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/Footer\/_footer.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_all.scss": {
@@ -384,7 +384,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_sub-bar-arrow.scss": {
@@ -397,7 +397,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_sub-bar-arrow.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_sub-bar-content.scss": {
@@ -410,7 +410,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_sub-bar-content.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_sub-bar-icon.scss": {
@@ -423,7 +423,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_sub-bar-icon.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_sub-bar-title.scss": {
@@ -436,7 +436,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_sub-bar-title.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/components\/SubBar\/_sub-bar.scss": {
@@ -449,7 +449,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/SubBar\/_sub-bar.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/helpers\/_all.scss": {
@@ -462,7 +462,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/helpers\/_all.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/helpers\/_mixins.scss": {
@@ -475,7 +475,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/helpers\/_mixins.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/helpers\/_vars.scss": {
@@ -488,7 +488,7 @@
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/helpers\/_vars.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/src\/stylesheets\/main.css": {
@@ -511,7 +511,7 @@
 		"oA": 0,
 		"oAP": "\/src\/stylesheets\/main.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/yarn.lock": {
@@ -2427,10 +2427,10 @@
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathRelativePath": "\/",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"compileDebug": 1,
 		"outputStyle": 0,
 		"shouldRunCacheBuster": 0
@@ -2445,7 +2445,7 @@
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 3,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1

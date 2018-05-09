@@ -1,8 +1,10 @@
 .app-bar-content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  z-index: 5;
   @include container();
   @include mq('tablet', max) {
     display: block;

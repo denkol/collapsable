@@ -7,7 +7,8 @@ import ReactDOM from 'react-dom';
 import AppBar from './components/AppBar';
 import Footer from './components/Footer';
 import SubBar from './components/SubBar';
-
+import ProductMenu from './components/ProductMenu';
+import Btn from './components/Btn';
 
 const App = () => {
   return (
@@ -32,8 +33,16 @@ const App = () => {
           ]
         }
       />
-      <div style={{paddingTop: "48px"}}>
+
+      <div style={{paddingTop: "48px", height: "3000px"}}>
         {/*Some content here*/}
+        <ProductMenu
+          theme={"light"}
+          fullWidth={true}
+          title={"SES"}
+          actionBtn={<Btn text="Kaufen"/>}
+          menuItems={[{title: "Überblick", href: "/uberblick"}, {title: "Technische Daten", href: "/technische_daten"}]}
+        />
         <SubBar
           theme={"light"}
           menuItems={[

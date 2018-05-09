@@ -1,0 +1,87 @@
+@mixin ProductMenuTheme($text-color, $bg-color) {
+  
+  color: $text-color;
+  .product-menu-content {
+    border-color: lighten($text-color, 80%);
+  }
+  .product-menu-links {
+    color: $text-color;
+  }
+  .product-menu-links__item {
+    border-color: lighten($text-color, 90%);
+  }
+
+  @include mq('tablet', max) {
+    background-color: #fff;
+    .product-menu-header, .product-menu-content {
+      background-color: $bg-color;
+    }
+  }
+
+  .product-menu--full-width  {
+    background-color: rgba($bg-color, 0.8);
+    border-bottom: 1px solid lighten($text-color, 80%);
+    .product-menu-content {
+      
+      border: none;
+    }
+  }
+}
+
+@mixin ProductMenuExpanded() {
+  //here exapnded styles.
+  &:after {
+    display: block;
+    z-index: 4;
+  }
+  .product-menu-header {
+    position: relative;
+    border-bottom: none;
+  }
+  .product-menu-links__item {
+    opacity: 1;
+  }
+  .product-menu-content {
+    max-height: 400px;
+  }
+  @include mq('tablet', min) {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@mixin ProductMenuFullWidth() {
+  
+}
+
+
+.product-menu {
+  position: relative;
+  width: 100%;
+  
+  @include ProductMenuTheme(#fff, #000);
+  @include mq('tablet', max) {
+    z-index: 32;
+    height: 56px;
+  }
+  &:after {
+    //Shadow.
+    display: none;
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    
+  }
+
+  &--full-width {
+    @include ProductMenuFullWidth();
+  }
+  &--theme-light {
+    @include ProductMenuTheme(#000, #fff);
+  }
+  &--is-expanded {
+    @include ProductMenuExpanded();
+  }
+}

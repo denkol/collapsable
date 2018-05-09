@@ -1,0 +1,42 @@
+.product-menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container();
+  border-bottom: 1px solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  // box-sizing: content-box;
+  // padding: 0 14px;
+  @include mq('tablet', max) {
+    // box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // padding-top: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 28px;
+    position: relative;
+
+    max-height: 59px;
+    width: 100%;
+    transition: max-height 1s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
+    overflow: auto;
+        z-index: 5;
+  }
+  &__item {
+    @include right(32px);
+    @include mq('tablet', max) {
+      display: block;
+      @include right(0);
+      width: 100%;
+    }
+    &_title {
+      @include mq('tablet', max) {
+        display: none;  
+      }
+    }
+  }
+}
+

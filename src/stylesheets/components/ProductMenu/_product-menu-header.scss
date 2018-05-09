@@ -1,0 +1,19 @@
+.product-menu-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 6;
+  position: relative;
+  &__item {
+    
+  }
+  @include mq('tablet', max) {
+    position: absolute;
+    height: 58px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding: 10px 15px;
+  }
+}

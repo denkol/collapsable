@@ -12,21 +12,13 @@
     ]}
   />
 
-  $(window).on("scroll", function() {
-    var scrollHeight = $(document).height();
-    var scrollPosition = $(window).height() + $(window).scrollTop();
-    if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-      // when scroll to bottom of the page
-    }
-  });
-
 */
 
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import scroll from 'smoothscroll-polyfill';
+// import smoothscroll from 'smoothscroll-polyfill';
 import { IconPiBoard, IconMap, IconDrift, IconDashboard, IconTap, IconArrow, IconSmooth, IconCopy } from './icons';
 
 class SubBar extends Component {
@@ -115,7 +107,6 @@ class SubBar extends Component {
     }    
   }
   render() {
-    console.log(this.state)
     const { menuItems, theme } = this.props;
     const { isHiddenLeftArrow, isHiddenRightArrow} = this.state;
 
@@ -142,7 +133,6 @@ class SubBar extends Component {
     
     return (
       <div className={DynamicClasses.SubBar}>
-
         <div className='sub-bar-content' id='sub-bar-content' onScroll={this.scrollHandler}>
           {menuItems.map((item, key) => {
             return (

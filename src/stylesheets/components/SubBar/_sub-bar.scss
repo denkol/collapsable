@@ -6,8 +6,8 @@
   padding-left: 20px;
   padding-right: 20px;
   @include mq('phablet', max) {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   &--theme-dark {
     background-color: #000;

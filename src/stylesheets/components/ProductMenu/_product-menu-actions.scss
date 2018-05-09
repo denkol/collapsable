@@ -1,0 +1,20 @@
+.product-menu-actions {
+  display: flex;
+  align-items: center;
+  @include mq('tablet', max) {
+    display: block;
+    width: 100%;
+  }
+  &__item {
+    @include right(24px);
+    @include mq('tablet', max) {
+      margin-right: 0;
+      width: 100%;
+    }
+    &_btn {
+      @include mq('tablet', max) {
+        display: none;  
+      }
+    }
+  }
+}

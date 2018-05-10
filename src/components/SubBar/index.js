@@ -15,11 +15,17 @@
 */
 
 
+
+
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-// import smoothscroll from 'smoothscroll-polyfill';
 import { IconPiBoard, IconMap, IconDrift, IconDashboard, IconTap, IconArrow, IconSmooth, IconCopy } from './icons';
+
+/* Smooth scroll polyfill init */
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 
 class SubBar extends Component {
   constructor(props) {

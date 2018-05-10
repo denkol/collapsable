@@ -1,3 +1,39 @@
 .product-menu-background {
-  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+
+  @include mq('tablet', max) {
+    min-height: 48px;
+    -webkit-transition: background-color 0.5s ease 0.7s;
+    transition: background-color 0.5s ease 0.7s;
+  }
+
+  &:after {
+    // margin-left: -490px;
+    // left: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: $container-width;
+    // width: 100%;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -$container-width/2;
+    padding: 0;
+    height: 1px;
+    z-index: 1;
+    // transition: width 200ms;
+    @include mq('container', max) {
+      width: 100%;
+      left: 0;
+      margin-left: 0;
+    }
+  }
 }

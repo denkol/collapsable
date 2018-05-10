@@ -5802,7 +5802,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@>=15.5.10, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -6061,6 +6061,12 @@ react-scrollbar-size@^2.0.2:
     prop-types "^15.6.0"
     react-event-listener "^0.5.1"
     stifle "^1.0.2"
+
+react-sticky-el@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/react-sticky-el/-/react-sticky-el-1.0.17.tgz#5ff1f22433468666a162c295980fefa71b6ac6f2"
+  dependencies:
+    prop-types ">=15.5.10"
 
 react-svg-sprite-icon@^0.1.0:
   version "0.1.0"

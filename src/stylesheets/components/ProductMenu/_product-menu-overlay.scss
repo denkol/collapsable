@@ -1,0 +1,12 @@
+.product-menu-overlay {
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 9996;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}

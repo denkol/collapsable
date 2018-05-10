@@ -2,28 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include container();
-  border-bottom: 1px solid;
   padding-top: 14px;
   padding-bottom: 14px;
-  // box-sizing: content-box;
-  // padding: 0 14px;
+  @include container();
+  height: 100%;
+  position: relative;
+  z-index: 6;
   @include mq('tablet', max) {
-    // box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    // padding-top: 18px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 28px;
+    transition: background 0.35s linear,max-height 0.35s ease-in 200ms;
+    display: block;
     position: relative;
-
-    max-height: 59px;
-    width: 100%;
-    transition: max-height 1s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
-    overflow: auto;
-        z-index: 5;
+    z-index: 5;
+    visibility: hidden;
+    padding: 0;
   }
   &__item {
     @include right(32px);

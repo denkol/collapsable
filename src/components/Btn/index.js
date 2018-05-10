@@ -9,7 +9,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 class Btn extends Component {
   constructor(props) {
@@ -17,9 +17,9 @@ class Btn extends Component {
     this.state = {};
   }
   render() {
-    const { text, route } = this.props;
-    const DynamicClasses = {};
-    const SavedElements = {};
+    const { text } = this.props;
+    // const DynamicClasses = {};
+    // const SavedElements = {};
 
     return (
       <button className="btn">

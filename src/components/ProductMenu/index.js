@@ -4,6 +4,7 @@
   
   <ProductMenu
     theme="dark",
+    isSticky={true}
     title='Sometitle',
     actionBtn: {<Btn text="" route=""/>}
     menuItems={[
@@ -13,9 +14,7 @@
         disabled: true/false,
       }
     ]}
-    
   />
-
 */
 
 
@@ -76,8 +75,6 @@ class ProductMenu extends Component {
     };
     return (
       <Sticky className={DynamicClasses.Root} onFixedToggle={() => this.disableExpanded()} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
-      
-
         
         <div className='product-menu-wrapper'>
           <div className='product-menu-background'></div>
@@ -86,7 +83,6 @@ class ProductMenu extends Component {
             {SavedElements.arrow}
             {SavedElements.btn}
           </div>
-
           <div className='product-menu-content'>
             <div className='product-menu-content__item product-menu-content__item_title'>
               {SavedElements.title}
@@ -103,9 +99,6 @@ class ProductMenu extends Component {
             </div>
           </div>
         </div>
-        <div className='product-menu-overlay'></div>
-        
-      
       </Sticky>
     );
   }
@@ -117,7 +110,7 @@ ProductMenu.defaultProps = {
   title: '',
   menuItems: [],
   actionBtn: null,
-  fullWidth: false,
+  isSticky: false,
 };
 
 ProductMenu.propTypes = {
@@ -125,7 +118,7 @@ ProductMenu.propTypes = {
   title: PropTypes.string,
   menuItems: PropTypes.array,
   actionBtn: PropTypes.element,
-  fullWidth: PropTypes.bool,
+  isSticky: PropTypes.bool,
 };
 
 export default ProductMenu;

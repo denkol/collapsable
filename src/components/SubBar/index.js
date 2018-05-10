@@ -92,7 +92,7 @@ class SubBar extends Component {
         isHiddenRightArrow: false,
         scrollPosition: scrollLeft,
       });
-    } else if (offsetWidth + scrollLeft == scrollWidth) {
+    } else if (offsetWidth + scrollLeft === scrollWidth) {
       this.setState({
         isHiddenLeftArrow: false,
         isHiddenRightArrow: true,

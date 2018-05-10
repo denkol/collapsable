@@ -39,7 +39,7 @@ const App = () => {
         <ProductMenu
           theme="light"
           isSticky={true}
-          actionBtn={<Btn text="Купить" />}
+          actionBtn={<Btn text="Kaufen" />}
           title={ {text: "SES", href: "/ses" } }
           menuItems={[
             {
@@ -50,7 +50,7 @@ const App = () => {
               title: "Technische Daten", 
               href: "/technische_daten", 
               isDisabled: false
-            }
+            } 
           ]}
         />
         

@@ -37,18 +37,25 @@ const App = () => {
       <div style={{paddingTop: "48px", height: "3000px"}}>
         {/*Some content here*/}
         <ProductMenu
-          theme="dark"
+          theme="light"
           isSticky={true}
-          title={"SES"}
-          actionBtn={<Btn text="Kaufen"/>}
+          actionBtn={<Btn text="Купить" />}
+          title={ {text: "SES", href: "/ses" } }
           menuItems={[
-            {title: "Überblick", href: "/uberblick", isDisabled: true,}, 
-            {title: "Technische Daten", href: "/technische_daten", isDisabled: false},
+            {
+              title: "Überblick", 
+              href: "/uberblick", 
+              isDisabled: true
+            }, {
+              title: "Technische Daten", 
+              href: "/technische_daten", 
+              isDisabled: false
+            }
           ]}
         />
         
         <SubBar
-          theme={"dark"}
+          theme={"light"}
           menuItems={[
             {
               iconName: "map",

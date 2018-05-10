@@ -7,13 +7,6 @@
     border-color: lighten($text-color, 90%);
   }
   
-  /* Border color */
-  .product-menu-background {
-    &:after {
-      background-color: rgba($text-color, 0.5);
-    }
-  }
-  
   /* Arrow */
   .product-menu-arrow__chevron {
     &:after,
@@ -85,9 +78,17 @@
     @include ProductMenuExpanded();
   }
   &--theme-light {
+    /* Border color */
+    .product-menu-background {
+      &:after {
+        background-color: rgba(136,136,136,.4);
+      }
+    }
     @include ProductMenuTheme(#000, #fff);
   }
 }
+
+
 .product-menu--theme-light.product-menu--is-sticky {
   .product-menu-background {
     background-color: rgba(#fff, 0.5);

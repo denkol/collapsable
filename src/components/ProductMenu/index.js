@@ -5,7 +5,10 @@
   <ProductMenu
     theme="dark",
     isSticky={true}
-    title='Sometitle',
+    title={
+      text: 'Sometitle',
+      href: '/someroute'
+    }
     actionBtn: {<Btn text="" route=""/>}
     menuItems={[
       {
@@ -29,7 +32,6 @@ class ProductMenu extends Component {
     this.state = {
       isExpanded: false,
     };
-    // this.scrollyHandler = this.scrollyHandler.bind(this);
   }
   toggleList() {
     this.setState({
@@ -42,7 +44,6 @@ class ProductMenu extends Component {
     });
   }
   render() {
-    console.log(this.state)
     const { menuItems, theme, actionBtn, title, isSticky } = this.props;
     const { isExpanded } = this.state;
     
@@ -52,7 +53,10 @@ class ProductMenu extends Component {
         'product-menu--theme-light': theme === 'light',
         'product-menu--is-expanded': isExpanded,
       }),
-      LinkItem: (isDisabled) => classNames({"product-menu-links__item": true, "product-menu-links__item--is-disabled": isDisabled}),
+      LinkItem: (isDisabled) => classNames({
+        "product-menu-links__item": true, 
+        "product-menu-links__item--is-disabled": isDisabled
+      }),
       Arrow: classNames({
         'product-menu-arrow': true,
         'product-menu-arrow--is-active': isExpanded,
@@ -60,7 +64,7 @@ class ProductMenu extends Component {
     };
 
     const SavedElements = {
-      title: (<h2 className="product-menu-title">{title}</h2>),
+      title: (<a href={title.href || ""} className="product-menu-title"><h2>{title.text}</h2></a>),
       btn: (<React.Fragment>{actionBtn}</React.Fragment>),
       links: (
         <div className="product-menu-links">
@@ -75,12 +79,11 @@ class ProductMenu extends Component {
     };
     return (
       <Sticky className={DynamicClasses.Root} onFixedToggle={() => this.disableExpanded()} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
-        
         <div className='product-menu-wrapper'>
           <div className='product-menu-background'></div>
           <div className='product-menu-header'>
-            {SavedElements.title}  
-            {SavedElements.arrow}
+            {title.text ? SavedElements.title : ""}  
+            {menuItems.length ? SavedElements.arrow : ""}
             {SavedElements.btn}
           </div>
           <div className='product-menu-content'>
@@ -92,9 +95,7 @@ class ProductMenu extends Component {
                 <div className='product-menu-actions__item'>
                   {SavedElements.links}
                 </div>
-                <div className='product-menu-actions__item product-menu-actions__item_btn'>
-                  {SavedElements.btn}
-                </div>
+                {actionBtn ? <div className='product-menu-actions__item product-menu-actions__item_btn'> {SavedElements.btn} </div> : ""}
               </div>
             </div>
           </div>
@@ -107,7 +108,10 @@ class ProductMenu extends Component {
 
 ProductMenu.defaultProps = {
   theme: 'dark',
-  title: '',
+  title: {
+    text: null,
+    href: null,
+  },
   menuItems: [],
   actionBtn: null,
   isSticky: false,
@@ -115,7 +119,10 @@ ProductMenu.defaultProps = {
 
 ProductMenu.propTypes = {
   theme: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.shape({
+    text: PropTypes.string,
+    href: PropTypes.string,
+  }),
   menuItems: PropTypes.array,
   actionBtn: PropTypes.element,
   isSticky: PropTypes.bool,

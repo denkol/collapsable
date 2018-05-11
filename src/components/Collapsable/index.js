@@ -50,7 +50,7 @@ class Collapsable extends Component {
       isExpanded: false 
     };
   }
-  toggleDrawer() {
+  toggleDrawer = () => {
     this.setState({
       isExpanded: !this.state.isExpanded,
     });
@@ -95,7 +95,7 @@ class Collapsable extends Component {
     return (
       <div className={DynamicClasses.collapsable} style={{fontSize: titleSize}}>
         <div className="collapsable-content">
-          <ExpansionPanel classes={{...this.props.classes}} onChange={() => this.toggleDrawer()} disabled={!content}>
+          <ExpansionPanel classes={{...this.props.classes}} onChange={this.toggleDrawer} disabled={!content}>
             <ExpansionPanelSummary className="collapsable-head">
               <h2 className={DynamicClasses.headline}>{title}</h2>
               <div style={{backgroundImage: `url(${closeIcon})`}} className={DynamicClasses.expandIcon}></div>

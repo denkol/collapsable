@@ -35,10 +35,8 @@ class SubBar extends Component {
       isHiddenRightArrow: false,
       scrollPosition: 0
     };
-
-    this.scrollHandler = this.scrollHandler.bind(this);
   }
-  renderSubBarIcon(iconName) {
+  renderSubBarIcon = (iconName) => {
     switch(iconName) {
       case 'map':
         return IconMap;
@@ -58,7 +56,7 @@ class SubBar extends Component {
         return 'No icon';
     }
   }
-  arrowClickHandler(e, direction) {
+  arrowClickHandler = (e, direction) => {
     const { isHiddenLeftArrow, isHiddenRightArrow } = this.state;
     const contentElem = document.getElementById('sub-bar-content');
     const viewport = contentElem.offsetWidth;
@@ -87,7 +85,7 @@ class SubBar extends Component {
 
   }
 
-  scrollHandler(e) {
+  scrollHandler = (e) => {
     const offsetWidth = e.target.offsetWidth;
     const scrollWidth = e.target.scrollWidth;
     const scrollLeft = e.target.scrollLeft;

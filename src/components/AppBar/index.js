@@ -39,7 +39,7 @@ class AppBar extends Component {
       isFullScreenMenuOpen: false
     };
   }
-  toggleMobileMenu() {
+  toggleMobileMenu = () => {
     this.setState({
       isFullScreenMenuOpen: !this.state.isFullScreenMenuOpen
     })
@@ -70,7 +70,7 @@ class AppBar extends Component {
       <nav className={DynamicClasses.AppBar}>
         <div className="app-bar-header">
           <div className="app-bar-header__item app-bar-header__item_hamburger">
-            <IconHamburger className={DynamicClasses.Hamburger} onClick={() => this.toggleMobileMenu()}/>
+            <IconHamburger className={DynamicClasses.Hamburger} onClick={this.toggleMobileMenu}/>
           </div>
           <div className="app-bar-header__item app-bar-header__item_logo">
             <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>

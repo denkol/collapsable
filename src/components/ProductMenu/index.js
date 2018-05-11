@@ -33,12 +33,12 @@ class ProductMenu extends Component {
       isExpanded: false,
     };
   }
-  toggleList() {
+  toggleList = () => {
     this.setState({
       isExpanded: !this.state.isExpanded,
     });
   }
-  disableExpanded() {
+  disableExpanded = () => {
     this.setState({
       isExpanded: false,
     });
@@ -72,13 +72,13 @@ class ProductMenu extends Component {
         </div>
       ),
       arrow: (
-        <div className={DynamicClasses.Arrow} onClick={() => this.toggleList()}>
+        <div className={DynamicClasses.Arrow} onClick={this.toggleList}>
           <span className='product-menu-arrow__chevron'></span>
         </div>
       ),
     };
     return (
-      <Sticky className={DynamicClasses.Root} onFixedToggle={() => this.disableExpanded()} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
+      <Sticky className={DynamicClasses.Root} onFixedToggle={this.disableExpanded} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
         <div className='product-menu-wrapper'>
           <div className='product-menu-background'></div>
           <div className='product-menu-header'>

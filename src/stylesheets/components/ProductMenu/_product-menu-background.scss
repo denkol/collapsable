@@ -1,4 +1,4 @@
-$line-width: $container-width - ($container-paddings * 2); // minus paddings right nad left 
+$line-width: $container-width - ($container-paddings * 2); // paddings right and left 
 
 .product-menu-background {
   position: absolute;
@@ -28,6 +28,7 @@ $line-width: $container-width - ($container-paddings * 2); // minus paddings rig
     height: 1px;
     z-index: 1;
     background-color: #979797;
+    transition: background-color 500ms;
     @include mq('container', max) {
       width: 100%;
       left: 0;

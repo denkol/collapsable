@@ -4,8 +4,21 @@
   justify-content: space-between;
   z-index: 6;
   position: relative;
+  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
   &__item {
-    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    &:first-child {
+      justify-content: flex-start;
+    }
+    &:last-child {
+      justify-content: flex-end;
+    }
+    &_arrow {
+      width: 25%;
+    }
   }
   @include mq('tablet', max) {
     position: absolute;

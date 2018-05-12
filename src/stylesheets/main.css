@@ -1107,15 +1107,24 @@ svg {
   transition: opacity 1s ease 0.1s;
 }
 
-.product-menu--is-expanded .product-menu-background {
-  background-color: #000;
-  max-height: none;
+.product-menu--is-expanded .product-menu-background,
+.product-menu--is-expanded .product-menu-header {
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   -webkit-transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
   transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+}
+
+.product-menu--is-expanded .product-menu-background,
+.product-menu--is-expanded .product-menu-background:after,
+.product-menu--is-expanded .product-menu-header {
+  background-color: #262626;
+}
+
+.product-menu--is-expanded .product-menu-background {
+  max-height: none;
 }
 
 .product-menu--is-expanded .product-menu-actions {
@@ -1169,8 +1178,8 @@ svg {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.product-menu--is-expanded.product-menu--theme-light .product-menu-background {
-  background-color: white;
+.product-menu--is-expanded.product-menu--theme-light .product-menu-background, .product-menu--is-expanded.product-menu--theme-light .product-menu-header {
+  background-color: #fff;
 }
 
 .product-menu-content {
@@ -1383,6 +1392,35 @@ svg {
           justify-content: space-between;
   z-index: 6;
   position: relative;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+.product-menu-header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.product-menu-header__item:first-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.product-menu-header__item:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.product-menu-header__item_arrow {
+  width: 25%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1452,6 +1490,13 @@ svg {
   font-weight: 500;
   text-decoration: none;
   color: inherit;
+}
+
+.product-menu-title h2 {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-menu-arrow {
@@ -1569,6 +1614,8 @@ svg {
   height: 1px;
   z-index: 1;
   background-color: #979797;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
 }
 
 @media only screen and (max-width: 1023px) {

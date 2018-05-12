@@ -25,15 +25,23 @@
     height: 100%;
     transition: opacity 1s ease 0.1s;
   }
-  .product-menu-background {
-    background-color: #000;
-    max-height: none;
+  .product-menu-background,
+  .product-menu-header {
     -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
     -webkit-transition-property: background-color, -webkit-backdrop-filter;
     transition-property: background-color, -webkit-backdrop-filter;
     transition-property: background-color, backdrop-filter;
     transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+  }
+  .product-menu-background, 
+  .product-menu-background:after,
+  .product-menu-header {
+    background-color: #262626;
+  }
+
+  .product-menu-background {
+    max-height: none;
   }
   .product-menu-actions {
     max-height: 400px;
@@ -95,7 +103,7 @@
   }
 }
 .product-menu--is-expanded.product-menu--theme-light {
-  .product-menu-background {
-    background-color: white;
+  .product-menu-background, .product-menu-header {
+    background-color: #fff;
   }
 }

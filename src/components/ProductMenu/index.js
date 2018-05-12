@@ -82,9 +82,9 @@ class ProductMenu extends Component {
         <div className='product-menu-wrapper'>
           <div className='product-menu-background'></div>
           <div className='product-menu-header'>
-            {title.text ? SavedElements.title : ""}  
-            {menuItems.length ? SavedElements.arrow : ""}
-            {SavedElements.btn}
+            {title.text ? <div className='product-menu-header__item'>{SavedElements.title}</div> : ""}  
+            {menuItems.length ? <div className='product-menu-header__item product-menu-header__item_arrow'>{SavedElements.arrow}</div> : ""}
+            {actionBtn ? <div className='product-menu-header__item'>{SavedElements.btn}</div> : ""}
           </div>
           <div className='product-menu-content'>
             <div className='product-menu-content__item product-menu-content__item_title'>

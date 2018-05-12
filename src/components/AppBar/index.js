@@ -3,6 +3,7 @@
   Component API should look like:
   
   <AppBar
+    appName="PANDA",
     theme={"dark" OR "light" OR "blue" }
     menuItems={
       [
@@ -45,8 +46,7 @@ class AppBar extends Component {
     })
   }
   render() {
-    const AppName = "PANDA";
-    const { menuItems, theme, transparent } = this.props;
+    const { appName, menuItems, theme, transparent } = this.props;
     const { isFullScreenMenuOpen } = this.state;
 
     const DynamicClasses = {
@@ -73,7 +73,7 @@ class AppBar extends Component {
             <IconHamburger className={DynamicClasses.Hamburger} onClick={this.toggleMobileMenu}/>
           </div>
           <div className="app-bar-header__item app-bar-header__item_logo">
-            <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>
+            <a href="/" title="Go Home" className="app-bar-logo">{appName}</a>
           </div>
           <div className="app-bar-header__item app-bar-header__item_bag">
             {IconBag}
@@ -81,7 +81,7 @@ class AppBar extends Component {
         </div>
         <div className="app-bar-content">
           <div className="app-bar-content__item app-bar-content__item_logo">
-            <a href="/" title="Go Home" className="app-bar-logo">{AppName}</a>
+            <a href="/" title="Go Home" className="app-bar-logo">{appName}</a>
           </div>
           {menuItems.map((item, key) => {
             return (
@@ -107,12 +107,14 @@ class AppBar extends Component {
 
 
 AppBar.defaultProps = {
+  appName: "PANDA",
   menuItems: [],
   theme: 'dark',
   transparent: false
 };
 
 AppBar.propTypes = {
+  appName: PropTypes.string,
   menuItems: PropTypes.array,
   theme: PropTypes.string,
   transparent: PropTypes.bool,

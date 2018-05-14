@@ -4,7 +4,7 @@
     color: $text-color;
   }
   .product-menu-links__item {
-    border-color: rgba($text-color, 0.4);
+    border-color: rgba($text-color, 0.1);
   }
   
   /* Arrow */
@@ -38,9 +38,6 @@
   .product-menu-background:after,
   .product-menu-header {
     background-color: #262626;
-    @include mq('tablet', min) {
-      background-color: transparent;
-    }
   }
 
   .product-menu-background {
@@ -87,6 +84,10 @@
   }
   &--is-expanded {
     @include ProductMenuExpanded();
+    
+    @include mq('tablet', min) {
+      background-color: transparent;
+    }
   }
   &--theme-light {
     /* Border color */

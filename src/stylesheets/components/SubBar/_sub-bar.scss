@@ -1,15 +1,16 @@
+$arrow-appear-breakpoint: "655px";
+$arrow-width: 40px;
+
 .sub-bar {
   position: relative;
   display: block;
   padding-top: 29px;
   padding-bottom: 29px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  padding-left: $arrow-width;
+  padding-right: $arrow-width;
   overflow: hidden;
-  @include mq('phablet', max) {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
   &--theme-dark {
     background-color: #000;
     .sub-bar-icon {
@@ -45,5 +46,13 @@
       display: none;
     }
 
+  }
+}
+
+
+@media only screen and (max-width: $arrow-appear-breakpoint) {
+  .sub-bar {
+    padding-left: $arrow-width;
+    padding-right: $arrow-width;
   }
 }

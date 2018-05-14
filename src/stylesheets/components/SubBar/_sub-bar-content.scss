@@ -3,20 +3,15 @@
   align-items: center;
   justify-content: center;
   overflow: auto;
-  @include container();
+  // @include container();
+  padding: 0;
   @include scrollbar-hide;
-  // @include mq('tablet', max) {
-  //   justify-content: space-between;
-  //   width: 100%;
-  // }
-  
+  text-align: center;
   @include mq('tablet', max) {
     justify-content: flex-start;
-    padding-left: 0;
-    padding-right: 0;
-    transition: transform 200ms;
   }
   &__item {
+    
     width: 60px;
     display: flex;
     align-items: center;
@@ -24,28 +19,23 @@
     height: 52px;
     @include right(96px);
     @include hover();
-    @include mq('tablet', max) {
-      // @include right(50px);
-      margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: $arrow-appear-breakpoint) {
+  .sub-bar-content {
+    // justify-content: flex-start;
+    // padding-left: 0;
+    // padding-right: 0;
+    transition: transform 200ms;
+    // margin-right: 16px;
+    &__item {
+      // box-sizing: content-box;
+      // flex: none;
       // padding-right: 20px;
-      // @include
-    }
-    @include mq('phablet', max) {
-      box-sizing: content-box;
-      flex: none;
-      // @include right(20px);
-      // margin-right: 20px;
-      // margin-right: 0;
-      padding-right: 20px;
-      // padding-left: 10px;
       &:last-child{
         padding-right: 0;
       }
-      margin: 0;
-
     }
-    // @include mq('phone', max) {
-      // @include right(20px);
-    // }
   }
 }

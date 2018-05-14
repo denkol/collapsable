@@ -797,16 +797,9 @@ svg {
   display: block;
   padding-top: 29px;
   padding-bottom: 29px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   overflow: hidden;
-}
-
-@media only screen and (max-width: 559px) {
-  .sub-bar {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
 }
 
 .sub-bar--theme-dark {
@@ -852,6 +845,13 @@ svg {
   display: none;
 }
 
+@media only screen and (max-width: 655px) {
+  .sub-bar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .sub-bar-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,17 +863,8 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: auto;
-  width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 22px;
-  padding-right: 22px;
-}
-
-@media only screen and (max-width: 1023px) {
-  .sub-bar-content {
-    width: 100%;
-  }
+  padding: 0;
+  text-align: center;
 }
 
 .sub-bar-content::-webkit-scrollbar {
@@ -893,12 +884,6 @@ svg {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 0;
-    padding-right: 0;
-    -webkit-transition: -webkit-transform 200ms;
-    transition: -webkit-transform 200ms;
-    transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms;
   }
 }
 
@@ -929,21 +914,12 @@ svg {
   opacity: .65;
 }
 
-@media only screen and (max-width: 767px) {
-  .sub-bar-content__item {
-    margin-right: 50px;
-  }
-}
-
-@media only screen and (max-width: 559px) {
-  .sub-bar-content__item {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    padding-right: 20px;
-    margin: 0;
+@media only screen and (max-width: 655px) {
+  .sub-bar-content {
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
   }
   .sub-bar-content__item:last-child {
     padding-right: 0;
@@ -1052,18 +1028,18 @@ svg {
           transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 767px) {
+.sub-bar-arrow--is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 655px) {
   .sub-bar-arrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.sub-bar-arrow--is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .product-menu {
@@ -1080,7 +1056,7 @@ svg {
 }
 
 .product-menu .product-menu-links__item {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .product-menu .product-menu-arrow__chevron:after, .product-menu .product-menu-arrow__chevron:before {
@@ -1123,14 +1099,6 @@ svg {
   background-color: #262626;
 }
 
-@media only screen and (min-width: 768px) {
-  .product-menu--is-expanded .product-menu-background,
-  .product-menu--is-expanded .product-menu-background:after,
-  .product-menu--is-expanded .product-menu-header {
-    background-color: transparent;
-  }
-}
-
 .product-menu--is-expanded .product-menu-background {
   max-height: none;
 }
@@ -1160,6 +1128,12 @@ svg {
           transform: translate3d(0, 0, 0);
 }
 
+@media only screen and (min-width: 768px) {
+  .product-menu--is-expanded {
+    background-color: transparent;
+  }
+}
+
 .product-menu--theme-light {
   /* Border color */
   color: #000;
@@ -1175,7 +1149,7 @@ svg {
 }
 
 .product-menu--theme-light .product-menu-links__item {
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .product-menu--theme-light .product-menu-arrow__chevron:after, .product-menu--theme-light .product-menu-arrow__chevron:before {

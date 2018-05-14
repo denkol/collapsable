@@ -19,6 +19,7 @@ $app-bar-height: 48px;
   @include mq('tablet', max) {
     transition: background 0.35s linear,height 0.35s ease-in 200ms;
     &--is-expanded {
+      position: fixed;
       background-color: #000;
       height: 100%;
       .app-bar-header__item_bag {

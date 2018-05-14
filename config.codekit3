@@ -70,6 +70,17 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/src\/bg.png": {
+		"ft": 32768,
+		"iS": 333387,
+		"oA": 0,
+		"oAP": "\/src\/bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/components\/AppBar\/icons.js": {
 		"ft": 64,
 		"ma": 0,
@@ -491,6 +502,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/src\/stylesheets\/components\/ProductMenu\/_product-menu-header.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"\/src\/stylesheets\/components\/ProductMenu\/_product-menu-holder.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/stylesheets\/components\/ProductMenu\/_product-menu-holder.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

@@ -10,6 +10,8 @@ import SubBar from './components/SubBar';
 import ProductMenu from './components/ProductMenu';
 import Btn from './components/Btn';
 
+import test_bg from './bg.png';
+
 const App = () => {
   return (
     <div>
@@ -36,6 +38,7 @@ const App = () => {
 
       <div style={{paddingTop: "48px", height: "3000px"}}>
         {/*Some content here*/}
+        
         <ProductMenu
           theme="dark"
           isSticky={true}
@@ -53,6 +56,8 @@ const App = () => {
             } 
           ]}
         />
+
+        <div style={{backgroundSize: "cover", backgroundImage: `url(${test_bg})`, height: "500px", width: "100%" }}></div>
         
         <SubBar
           theme={"light"}

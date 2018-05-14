@@ -86,6 +86,11 @@ class SubBar extends Component {
   }
 
   scrollHandler = (e) => {
+    /* var div = document.getElementById('container_div_id');
+
+var hasHorizontalScrollbar = div.scrollWidth > div.clientWidth;
+var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
+*/
     const offsetWidth = e.target.offsetWidth;
     const scrollWidth = e.target.scrollWidth;
     const scrollLeft = e.target.scrollLeft;

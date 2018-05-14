@@ -68,7 +68,11 @@ class ProductMenu extends Component {
       btn: (<React.Fragment>{actionBtn}</React.Fragment>),
       links: (
         <div className="product-menu-links">
-          {menuItems.map((item, key) => <a key={key} className={DynamicClasses.LinkItem(item.isDisabled)} href={item.href}>{item.title}</a>)}
+          {menuItems.map((item, key) => (
+            <div key={key} className={DynamicClasses.LinkItem(item.isDisabled)}>
+              <a href={item.href}> {item.title} </a>
+            </div>
+          ))}
         </div>
       ),
       arrow: (
@@ -78,29 +82,31 @@ class ProductMenu extends Component {
       ),
     };
     return (
-      <Sticky className={DynamicClasses.Root} onFixedToggle={this.disableExpanded} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
-        <div className='product-menu-wrapper'>
-          <div className='product-menu-background'></div>
-          <div className='product-menu-header'>
-            {title.text ? <div className='product-menu-header__item'>{SavedElements.title}</div> : ""}  
-            {menuItems.length ? <div className='product-menu-header__item product-menu-header__item_arrow'>{SavedElements.arrow}</div> : ""}
-            {actionBtn ? <div className='product-menu-header__item'>{SavedElements.btn}</div> : ""}
-          </div>
-          <div className='product-menu-content'>
-            <div className='product-menu-content__item product-menu-content__item_title'>
-              {SavedElements.title}
+      <div className="product-menu-holder">
+        <Sticky className={DynamicClasses.Root} onFixedToggle={this.disableExpanded} stickyClassName={'product-menu--is-sticky'} disabled={!isSticky}>
+          <div className='product-menu-wrapper'>
+            <div className='product-menu-background'></div>
+            <div className='product-menu-header'>
+              {title.text ? <div className='product-menu-header__item'>{SavedElements.title}</div> : ""}  
+              {menuItems.length ? <div className='product-menu-header__item product-menu-header__item_arrow'>{SavedElements.arrow}</div> : ""}
+              {actionBtn ? <div className='product-menu-header__item'>{SavedElements.btn}</div> : ""}
             </div>
-            <div className='product-menu-content__item'>
-              <div className='product-menu-actions'>
-                <div className='product-menu-actions__item'>
-                  {SavedElements.links}
+            <div className='product-menu-content'>
+              <div className='product-menu-content__item product-menu-content__item_title'>
+                {SavedElements.title}
+              </div>
+              <div className='product-menu-content__item'>
+                <div className='product-menu-actions'>
+                  <div className='product-menu-actions__item'>
+                    {SavedElements.links}
+                  </div>
+                  {actionBtn ? <div className='product-menu-actions__item product-menu-actions__item_btn'> {SavedElements.btn} </div> : ""}
                 </div>
-                {actionBtn ? <div className='product-menu-actions__item product-menu-actions__item_btn'> {SavedElements.btn} </div> : ""}
               </div>
             </div>
           </div>
-        </div>
-      </Sticky>
+        </Sticky>
+      </div>
     );
   }
 };

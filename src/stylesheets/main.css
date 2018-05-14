@@ -1080,7 +1080,7 @@ svg {
 }
 
 .product-menu .product-menu-links__item {
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .product-menu .product-menu-arrow__chevron:after, .product-menu .product-menu-arrow__chevron:before {
@@ -1121,6 +1121,14 @@ svg {
 .product-menu--is-expanded .product-menu-background:after,
 .product-menu--is-expanded .product-menu-header {
   background-color: #262626;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-menu--is-expanded .product-menu-background,
+  .product-menu--is-expanded .product-menu-background:after,
+  .product-menu--is-expanded .product-menu-header {
+    background-color: transparent;
+  }
 }
 
 .product-menu--is-expanded .product-menu-background {
@@ -1167,7 +1175,7 @@ svg {
 }
 
 .product-menu--theme-light .product-menu-links__item {
-  border-color: #e6e5e5;
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .product-menu--theme-light .product-menu-arrow__chevron:after, .product-menu--theme-light .product-menu-arrow__chevron:before {
@@ -1273,6 +1281,17 @@ svg {
 .product-menu-links__item {
   display: block;
   margin-right: 24px;
+}
+
+.product-menu-links__item:last-child {
+  margin-right: 0;
+}
+
+.product-menu-links__item a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: inherit;
@@ -1281,11 +1300,7 @@ svg {
   text-decoration: none;
 }
 
-.product-menu-links__item:last-child {
-  margin-right: 0;
-}
-
-.product-menu-links__item:hover {
+.product-menu-links__item a:hover {
   cursor: pointer;
   opacity: .65;
 }
@@ -1303,6 +1318,10 @@ svg {
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
     margin-right: 0;
+    border-bottom: 1px solid;
+  }
+  .product-menu-links__item:last-child {
+    border-bottom: 0;
   }
   .product-menu-links__item:nth-child(2) {
     -webkit-transition-delay: 100ms;
@@ -1654,6 +1673,12 @@ svg {
     height: auto;
     z-index: 9997;
   }
+}
+
+/* This is need to make ProductMenu above the content */
+.product-menu-holder {
+  width: 100%;
+  position: absolute;
 }
 
 .btn {

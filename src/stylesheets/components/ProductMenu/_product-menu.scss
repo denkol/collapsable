@@ -4,7 +4,7 @@
     color: $text-color;
   }
   .product-menu-links__item {
-    border-color: lighten($text-color, 90%);
+    border-color: rgba($text-color, 0.4);
   }
   
   /* Arrow */
@@ -38,6 +38,9 @@
   .product-menu-background:after,
   .product-menu-header {
     background-color: #262626;
+    @include mq('tablet', min) {
+      background-color: transparent;
+    }
   }
 
   .product-menu-background {

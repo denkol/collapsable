@@ -40,7 +40,7 @@ const App = () => {
         {/*Some content here*/}
         
         <ProductMenu
-          theme="light"
+          theme="dark"
           isSticky={true}
           actionBtn={<Btn text="Kaufen" />}
           title={ {text: "SES", href: "/ses" } }

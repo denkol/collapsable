@@ -1,0 +1,63 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: @interface-width;
+  height: 100%;
+  width: 100%;
+  font-synthesis: none;
+  color: #333;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: darkcyan;
+}
+
+html {
+  font-size: @default-font-size;
+}
+
+body {
+  font-family: @default-family;
+  min-width: 320px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  font-family: @default-family;
+}
+
+textarea {
+  font-family: @default-family;
+}
+
+b {
+  font-weight: bold;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: @default-family;
+}
+
+svg {
+  display: block;
+}

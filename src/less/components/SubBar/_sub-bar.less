@@ -1,0 +1,58 @@
+@arrow-appear-breakpoint: "655px";
+@arrow-width: 40px;
+
+.sub-bar {
+  position: relative;
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  padding-left: @arrow-width;
+  padding-right: @arrow-width;
+  overflow: hidden;
+  &--theme-dark {
+    background-color: #000;
+    .sub-bar-icon {
+      svg {
+        fill: #fff;
+        stroke: #000;
+      }
+      svg #radio-waves {
+          fill: #000;
+        }
+    }
+    .sub-bar-title {
+      color: #fff;
+    }
+    .sub-bar-arrow {
+      background-color: #000;
+      &__icon {
+        svg {
+          fill: #fff;
+        }
+      }
+      &:after {
+        background-color: #fff;
+      }
+    }
+  }
+  &--lesser-3 {
+    padding-right: 20px;
+    .sub-bar-content {
+      justify-content: center;
+    }
+    .sub-bar-arrow {
+      display: none;
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: @arrow-appear-breakpoint) {
+  .sub-bar {
+    padding-left: @arrow-width;
+    padding-right: @arrow-width;
+  }
+}

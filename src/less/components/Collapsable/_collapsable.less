@@ -1,0 +1,136 @@
+/* Base */
+
+.collapsable {
+  width: 100%;
+  font-size: inherit;
+}
+
+.collapsable:last-child {
+  border-bottom: 0;
+}
+
+.collapsable p {
+  margin: 0; margin-bottom: 16px;
+}
+
+.collapsable .collapsable .collapsable-content {
+  width: 100%;
+}
+
+.collapsable .collapsable .collapsable-head {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.collapsable .collapsable .expand-icon {
+  margin-right: 8px;
+}
+
+.collapsable .collapsable .collapsable-drawer {
+  padding: 0;
+}
+
+.collapsable_fullwidth-border {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.collapsable_border {
+  border-top: 1px solid #d6d6d6;
+}
+
+/* Content */
+
+.collapsable-content {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Head */
+
+.collapsable-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.collapsable-head div:first-child {
+  width: 100%;
+  padding: 0 !important;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Drawer */
+
+.collapsable-drawer {
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.2s;
+  margin-bottom: 22px;
+  padding: 0 24px;
+}
+
+.collapsable-drawer--is-expanded {
+  /* If you want css for toogle */
+}
+
+
+/* Headline */
+
+.collapsable-headline {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: .011em;
+  margin: 0;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.collapsable-headline--is-hoverable:hover {
+  color: #0070c9;
+  cursor: pointer;
+}
+
+/* Icon */
+
+.expand-icon {
+  flex: none;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+  transform: rotate(0deg);
+  width: 0.8em; 
+  height: 0.8em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  padding-right: 0 !important;
+}
+
+.expand-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.expand-icon:active {
+  opacity: 0.5;
+}
+
+.expand-icon--is-init-hidden {
+  opacity: 0;
+}
+
+.expand-icon--is-active {
+  opacity: 1;
+  transform: scale(1.1) rotate(45deg);
+}
+

@@ -1,0 +1,74 @@
+@base-transition-delay-for-item: 300ms;
+@app-bar-height: 48px;
+
+.app-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: @app-bar-height;
+  background-color: #393939;
+  &_transparent {
+    background-color: rgba(0,0,0,0.8);
+  }
+  @media only screen and (max-width: @tablet) {
+    transition: background 0.35s linear,height 0.35s ease-in 200ms;
+    &--is-expanded {
+      position: fixed;
+      background-color: #000;
+      height: 100%;
+      .app-bar-header__item_bag {
+        transform: translateX(200%);
+      }
+      .app-bar-content {
+        visibility: visible;
+        transition-delay: 0s;
+        &__item {
+          opacity: 1;
+          transform: none;
+          .for(@i: 2) when (@i <= 9) {
+            &:nth-child(@{i}) {
+              transition-delay: @base-transition-delay-for-item + @i*50, @base-transition-delay-for-item + @i*50;
+            }
+            .for((@i + 1));
+}
+.for();
+        }
+      }
+    }
+  }
+  
+  &--theme-light {
+    background-color: #fff;
+    .app-bar_transparent {
+      background-color: rgba(255,255,255,0.8);
+    }
+    .app-bar-header__item {
+      svg {
+        fill: #000;
+      }
+    }
+    .app-bar-content__item {
+      @media only screen and (max-width: @tablet) {
+        border-bottom: 1px solid #eee;
+      }
+      a {
+        color: #000;
+      }
+      svg {
+        fill: #000;
+      }
+      input {
+        color: #000;
+      }
+    }
+    .app-hamburger-crust {
+      background-color: #000;
+    }
+  }
+}

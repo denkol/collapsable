@@ -1,5 +1,5 @@
 /* Styles bundle */
-import './stylesheets/main.css';
+import './less/main.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -9,8 +9,6 @@ import Footer from './components/Footer';
 import SubBar from './components/SubBar';
 import ProductMenu from './components/ProductMenu';
 import Btn from './components/Btn';
-
-import test_bg from './bg.png';
 
 const App = () => {
   return (
@@ -36,11 +34,11 @@ const App = () => {
         }
       />
 
-      <div style={{paddingTop: "48px", height: "3000px"}}>
+      <div style={{paddingTop: "48px", height: ""}}>
         {/*Some content here*/}
         
         <ProductMenu
-          theme="dark"
+          theme="light"
           isSticky={true}
           actionBtn={<Btn text="Kaufen" />}
           title={ {text: "SES", href: "/ses" } }
@@ -57,7 +55,7 @@ const App = () => {
           ]}
         />
 
-        <div style={{backgroundSize: "cover", backgroundImage: `url(${test_bg})`, height: "500px", width: "100%" }}></div>
+        <div style={{height: "48px", width: "100%" }}></div>
         
         <SubBar
           theme={"light"}

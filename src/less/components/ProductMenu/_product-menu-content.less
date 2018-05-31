@@ -1,0 +1,33 @@
+.product-menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  .container();
+  height: 100%;
+  position: relative;
+  z-index: 6;
+  @media only screen and (max-width: @tablet) {
+    transition: background 0.35s linear,max-height 0.35s ease-in 200ms;
+    display: block;
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+    padding: 0;
+  }
+  &__item {
+    .right(32px);
+    @media only screen and (max-width: @tablet) {
+      display: block;
+      .right(0);
+      width: 100%;
+    }
+    &_title {
+      @media only screen and (max-width: @tablet) {
+        display: none;  
+      }
+    }
+  }
+}
+

@@ -1,0 +1,107 @@
+.container(@width: @container-width) {
+  width: @width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: @container-paddings;
+  padding-right: @container-paddings;
+  @media only screen and (max-width: @container) {
+    width: 100%;
+  }
+}
+
+.scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-moz-scrollbar {
+    display: none;
+  }
+  &::-ms-scrollbar {
+    display: none;
+  }
+}
+
+// .rem(@size) {
+//   @remSize: @size / @default-font-size;
+//   return: @{remSize};
+// }
+
+// .scrollbar-hide {
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+//   &::-moz-scrollbar {
+//     display: none;
+//   }
+//   &::-ms-scrollbar {
+//     display: none;
+//   }
+// }
+
+// .input-placeholder {
+//   &.placeholder {
+//     @rules();
+//   }
+//   &:-moz-placeholder {
+//     @rules();
+//   }
+//   &::-moz-placeholder {
+//     @rules();
+//   }
+//   &:-ms-input-placeholder {
+//     @rules();
+//   }
+//   &::-webkit-input-placeholder {
+//     @rules();
+//   }
+// }
+
+// .mq(@width, @type: min) {
+//   & when (@type=max) {
+//     @width: @width - 1px;
+//   }
+//   @media only screen and (@type: @width) {
+//     @rules();
+//   }
+// }
+
+.right(@width) {
+  margin-right: @width;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.bottom(@px) {
+  margin-bottom: @px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.size(@w, @h: @w) {
+  width: @w;
+  height: @h;
+}
+
+.cutWord(@display:block) {
+  display: @display;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hover() {
+  transition: opacity .2s cubic-bezier(.645, .045, .355, 1);
+  &:hover {
+    cursor: pointer;
+    opacity: .65;
+  }
+}
+
+.absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
